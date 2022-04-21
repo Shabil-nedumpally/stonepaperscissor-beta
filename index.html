@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone paper scissor Beta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+
+        <div class="content">
+
+            <h1>STONE  PAPER  SCISSOR</h1>
+            <h3 id="board" style="text-align: center; font-size: 30px;font-family: sans-serif;margin-top: 2%;"></h3>
+            <div class="player-cpu">
+            <h2>Player</h2>
+            <h2>CPU</h2>
+
+        </div>
+        <div class="player-cpu-score">
+            <h2 id="playerscore">SCORE :</h2>
+            <h2 id="cpuscore">SCORE :</h2>
+
+        </div>
+        </div>
+        <div class="page">
+            <div class="player-d" id="playerdisplay">
+                
+
+            </div>
+            <div class="cpu-d" id="cpudisplay">
+                
+
+
+            </div>
+
+
+        </div>
+
+        <div class="button" id="restart">
+            <div class="stone-click" id="stone" onclick="stoneclick()">
+            <div class="stone">
+            </div>
+            
+                            
+                <img src="https://static.thenounproject.com/png/88661-200.png" alt=""></div>
+                <div class="stone-click" id="paper" onclick="paperclick()">
+                    <div class="stone">
+                    </div>
+                    
+                                    
+                        <img src="https://static.thenounproject.com/png/477912-200.png" alt=""></div>
+
+                        <div class="stone-click" id="scisssor" onclick="scissorclick()" >
+                            <div class="stone">
+                            </div>
+                            
+                                            
+                                <img src="https://static.thenounproject.com/png/88666-200.png" alt=""></div>
+                                <div class="stone-click"  onclick="restart()">
+                                    <div class="stone">
+                                    </div>
+                                    
+                                                    
+                                        <img src="http://cdn.onlinewebfonts.com/svg/img_106832.png" alt=""></div>
+                
+
+            </div>
+            
+            
+
+
+
+    </div>
+
+    <script src="game.js"></script>
+    
+</body>
+</html>
