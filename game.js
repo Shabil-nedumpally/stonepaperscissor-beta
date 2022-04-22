@@ -10,6 +10,15 @@ var remove = document.getElementById('stone')
 var remove1= document.getElementById('paper')
 var remove2 = document.getElementById('scisssor')
 var restartb = document.getElementById('restart')
+var sounddisplay= document.getElementById('sounddisplay')
+
+const sound = new Audio ("HinaCC0_011_Fallen_leaves.mp3")
+const lose =new Audio ("mixkit-retro-arcade-lose-2027.wav")
+const win=new Audio ('mixkit-video-game-win-2016.wav')
+sound.play()
+sound.loop=true;
+
+
 
 
  function cpu(){
@@ -33,7 +42,10 @@ if(cpu==0 || cpur==1){
     remove.style.display='none'
     remove1.style.display='none'
     remove2.style.display='none'
-    restartb.style.alignItems='center'
+    restartb.style.justifyContent='center'
+    restartb.style.position='relative'
+    restartb.style.right='9%'
+    win.play()
     
     }
 }else if (cpur==1 && player==3 || cpur==2 && player==1 || cpur==3 && player==2 ){
@@ -46,7 +58,11 @@ if(cpu==0 || cpur==1){
         remove.style.display='none'
     remove1.style.display='none'
     remove2.style.display='none'
-    restartb.style.alignItems='center'
+    restartb.style.justifyContent='center'
+    restartb.style.position='relative'
+    restartb.style.right='9%'
+    lose.play();
+    
         
     
     }
@@ -72,4 +88,9 @@ function paperclick(){
 }
 function restart(){
     document.location.reload()
+}function  soundmute(){
+    sound.pause();
+    
+}function unmute(){
+    sound.play()
 }

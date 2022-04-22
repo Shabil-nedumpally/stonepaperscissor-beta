@@ -4,8 +4,6 @@
 }
 *{
     margin: 0;
-}.body{
-    
 }.container{
     width: 100vw;
     height: 100vh;
@@ -62,6 +60,8 @@
     height: 20%;
     display: flex;
     flex-direction: row;
+    
+
 
 }.stone{
     width: 100px;
@@ -78,6 +78,7 @@
     box-shadow: rgb(236, 225, 203) 0 4px 40px 13px;
     border-right: solid #0668fa 2px;
     background-color: rgb(255, 0, 21);
+    box-shadow: rgb(11, 218, 245) 0 4px 40px 13px;
 
 }.stone+img {
     position: relative;
@@ -87,6 +88,15 @@
     left: 46%;
 }.stone-click{
    margin-left: 13%;
+}.sound{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+
+
+}.sound i{
+    font-size: xx-large;
 }  @keyframes rotation {
     from {
       transform: rotate(0deg);
